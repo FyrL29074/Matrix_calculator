@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Matrix_A"
+    >
+
+    <TextView
+        style="@style/Activity_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Matrix_B"/>
+
+    <TextView
+        android:id="@+id/TV_Rows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rows"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"
+        />
+    <SeekBar
+        android:id="@+id/seekBar_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="1"
+        android:max="6"
+        android:progress="6"
+        tools:targetApi="o"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/TV_Columns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/columns"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"/>
+    <SeekBar
+        android:id="@+id/seekBar_column"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="1"
+        android:max="6"
+        android:progress="6"
+        tools:targetApi="o"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <EditText
+                    android:id="@+id/ET00"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET01"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <EditText
+                    android:id="@+id/ET02"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET03"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET04"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET05"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ET10"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET03"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET11"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET10"
+                    tools:ignore="Autofill,LabelFor"/>
+                <EditText
+                    android:id="@+id/ET12"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET13"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET14"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET15"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ET20"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET03"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET21"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET10"
+                    tools:ignore="Autofill,LabelFor"/>
+                <EditText
+                    android:id="@+id/ET22"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET23"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET24"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET25"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ET30"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET03"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET31"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET10"
+                    tools:ignore="Autofill,LabelFor"/>
+                <EditText
+                    android:id="@+id/ET32"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET33"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET34"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET35"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ET40"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET03"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET41"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET10"
+                    tools:ignore="Autofill,LabelFor"/>
+                <EditText
+                    android:id="@+id/ET42"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET43"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET44"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET45"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ET50"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET03"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET51"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET10"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET52"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <EditText
+                    android:id="@+id/ET53"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET54"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET01"
+                    tools:ignore="Autofill,LabelFor"/>
+
+                <EditText
+                    android:id="@+id/ET55"
+                    style="@style/matrix_number"
+                    android:nextFocusRight="@id/ET02"
+                    tools:ignore="Autofill,LabelFor"/>
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/Button_operation"
+            android:baselineAligned="false"
+            android:text="@string/plus"
+            android:layout_height="match_parent"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/Button_operation"
+            android:text="@string/minus"
+            android:layout_height="match_parent"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_multiply"
+            style="@style/Button_operation"
+            android:text="@string/multiply"
+            android:layout_height="match_parent"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!--android:text="@string/transpose" -->
+
+</LinearLayout>
